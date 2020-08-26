@@ -5,6 +5,8 @@ import io.jsonwebtoken.Jws
 import io.jsonwebtoken.Jwts
 import io.jsonwebtoken.SignatureAlgorithm
 import lombok.RequiredArgsConstructor
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
+import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.util.StringUtils
 import java.util.*
 import javax.servlet.http.HttpServletRequest
@@ -49,7 +51,9 @@ class JwtTokenProvider {
     }
 
 //    fun getAuthentication(token: String): Authentication {
-//        val userDetails: UserDetails = "Jung"
+//        val userDetails: UserDetails
+
+//        return UsernamePasswordAuthenticationToken(null, null)
 
 //    }
 }
